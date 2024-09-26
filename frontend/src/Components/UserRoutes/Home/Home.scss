@@ -1,0 +1,172 @@
+.home-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    .home-slider {
+        width: 100%;
+        padding: 2rem 20rem;
+        cursor: grab;
+
+        .slick-arrow {
+            z-index: 2;
+            padding: 1rem;
+            width: 6rem;
+            height: 100%;
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next {
+            right: 0;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 4rem;
+        }
+
+        .slide {
+            background-size: cover;
+            background-position: center;
+            height: 42rem;
+        }
+    }
+
+    .home-wrapper {
+        width: 100%;
+        padding: 2rem 20rem;
+
+        //slide
+        .home-menu {
+            display: flex;
+            justify-content: center;
+
+            a {
+                width: 15rem;
+                height: 4rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 0.1rem solid var(--border-line);
+            }
+
+            a:nth-child(1) {
+                background-image: url('../../../assets/imgs/logo-dell.png');
+            }
+            a:nth-child(2) {
+                background-image: url('../../../assets/imgs/logo-asus.png');
+            }
+            a:nth-child(3) {
+                background-image: url('../../../assets/imgs/logo-macbook.png');
+            }
+            a:nth-child(4) {
+                background-image: url('../../../assets/imgs/logo-hp.png');
+            }
+            a:nth-child(5) {
+                background-image: url('../../../assets/imgs/logo-acer.png');
+            }
+            a:nth-child(6) {
+                background-image: url('../../../assets/imgs/logo-lenovo.png');
+            }
+            a:nth-child(7) {
+                background-image: url('../../../assets/imgs/logo-msi.png');
+            }
+        }
+
+        //product
+        .home-product {
+            width: 100%;
+            margin: 2rem 0;
+
+            .home-product-items {
+                border-top: 0.1rem solid var(--border-line);
+
+                h3 {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.4rem 1.6rem 0 0;
+                    font-size: 2.4rem;
+                    width: 16rem;
+                    height: 4rem;
+                    clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%);
+                    background: var(--background-color);
+                    color: var(--text-white-color);
+                    border-bottom: 0.1rem solid var(--text-white-color);
+                }
+
+                .home-product-items-box {
+                    width: 100%;
+                    border-top: 0.3rem solid var(--background-color);
+                    padding: 1rem 0;
+                    flex-wrap: wrap;
+                    display: flex;
+
+                    .home-product-items-box-item {
+                        position: relative;
+                        width: 20%;
+                        height: 100%;
+                        border: 0.1rem solid var(--border-line);
+                        cursor: pointer;
+
+                        .home-product-items-box-item-img {
+                            position: absolute;
+                            width: 3.8rem;
+                            height: 6.8rem;
+                            background-size: cover;
+                            background-image: url('../../../assets/imgs/saleoff.png');
+
+                            span {
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                                position: absolute;
+                                display: flex;
+                                color: var(--text-white-color);
+                                bottom: 1.2rem;
+                                text-align: center;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 14rem;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        p {
+                            width: 100%;
+                            height: 7.6rem;
+                            font-size: 1.4rem;
+                            color: var(--background-color);
+                            padding: 1rem;
+                            text-align: left;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+
+                        span {
+                            display: block;
+                            width: 100%;
+                            font-size: 1.4rem;
+                            background: var(--text-black-005);
+                            text-align: left;
+                            padding: 0 1rem;
+                            line-height: 2.4rem;
+                            color: var(--btn-color);
+                        }
+
+                        .home-product-items-box-item-discount {
+                            color: var(--text-black-06);
+                            -webkit-text-decoration-line: line-through;
+                            text-decoration-line: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

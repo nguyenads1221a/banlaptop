@@ -1,0 +1,103 @@
+.news-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    .news-wrapper {
+        width: 100%;
+        min-height: 60vh;
+        padding: 4rem 20rem;
+        font-size: 2rem;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+
+        .news-left {
+            width: 60%;
+
+            .page-title {
+                font-size: 3rem;
+                color: var(--background-color);
+            }
+
+            .item {
+                width: 100%;
+                max-height: 20rem;
+                margin: 3rem 0;
+                display: flex;
+                overflow: hidden;
+                cursor: pointer;
+
+                .title-photo {
+                    width: 28rem;
+                    height: auto;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 1rem;
+                }
+
+                .content {
+                    flex: 1;
+                    margin-left: 2rem;
+
+                    .title {
+                        font-size: 1.8rem;
+                        color: var(--background-color);
+                    }
+
+                    .time-views {
+                        margin-top: 0.8rem;
+                        display: flex;
+
+                        .time,
+                        .views {
+                            width: 10rem;
+                            text-align: center;
+                            font-size: 1.3rem;
+                            border: 0.1rem solid #dedede;
+                            background-color: #f3f4f6;
+                            border-radius: 1rem;
+                            padding: 0 0.8rem;
+                            color: #666;
+                        }
+
+                        .views {
+                            margin-left: 0.6rem;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 1.5rem;
+                        margin-top: 0.8rem;
+                        line-height: 2rem;
+                        max-height: 10rem;
+                        overflow: hidden;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .news-right {
+            width: 34%;
+
+            .page-title {
+                font-size: 3rem;
+                color: var(--background-color);
+                margin-bottom: 2.4rem;
+            }
+
+            .item {
+                cursor: pointer;
+
+                .title-photo {
+                    margin: 0.6rem 0;
+                    width: 100%;
+                    height: auto;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+}
